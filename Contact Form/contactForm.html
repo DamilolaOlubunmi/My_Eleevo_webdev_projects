@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactForm.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <div class="contactDiv">
+        <form action="" method="post" class="contactForm">
+            <h2>Contact Us</h2>
+            
+            <label for="fullName">Full Name</label>
+            <input type="text" name="fullName" id="fullName" placeholder="Your Fullname (Surname First)" required/>
+
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email"  placeholder="example@email.com" required/>
+
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject" placeholder="Subject"/>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" placeholder="Write your message here...." required></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+
+            <p id="formMessage"></p>
+        </form>
+    </div>
+    <script defer src="contactForm.js"></script>
+</body>
+</html>

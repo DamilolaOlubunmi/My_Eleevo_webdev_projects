@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+.menu{
+    position: fixed;
+    top: .6em;
+    left: .6em;
+    padding: .3em;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 1);
+    color: rgb(204, 204, 204);
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    z-index: 1001;
+}
+.menu:hover{
+    background: #242424;
+}
+.menu.active{
+    background-color: rgba(0, 0, 0, .1);
+}
+.menu.active:hover{
+    width: 8%;
+    background: #242424;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
+.sidebar{
+    position: absolute;
+    top: 0;
+    left: -250px;
+    padding-top: 4em;
+    width: 250px;
+    height: 100%;
+    background-color: #000000;
+    color: #ccc;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+.sidebar.active{
+    left: 0;
+}
+.sidebar .logo img{
+    width: 2em;
+    height: 2em;
+}
+.sidebar .logo {
+    font-size: 24px;
+    width: 2em;
+    height: 2em;
+    margin: .5em auto;
+}
+.sidebar ul{
+    list-style: none;
+}
+.sidebar ul li{
+    padding: .8em .8em;
+    cursor: pointer;
+    height: 3em;
+}
+.sidebar ul li a{
+    position: absolute;
+    left: 3px;
+    padding: .7em;
+    text-align: left;
+    display: inline-block;
+    text-decoration: none;
+    color: #ccc;
+    width: 99%;
+    cursor: pointer;
+}
+.sidebar ul li a:hover{
+    background: #242424;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
+@media(max-width: 600px){
+    .sidebar{
+        width: 200px;
+    }
+}
+.text{
+    margin: 10em auto;
+    text-align: center;
+}
